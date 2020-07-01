@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Adults SportsWear</title>
+<link rel="stylesheet" href="../css/css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../js/js.js"></script> 
+</head>
+
+<body id="index_body">
+
+                                          <!-- Header + Navigation -->
+  <div class="header">
+
+    <div id="header_logo">
+      <a id="hover_logo" href="../index.html">
+        <span id="first_letter">S</span>
+        <span id="port">ports</span>
+        <span id="wear">Wear</span>
+      </a>
+    </div>
+    
+    <div id="nav">
+      <ul>
+        <li> <a id="nav_adults" href="adults_sportswear.html">Adults Section</a> </li>
+        <li> <a id="nav_kids" href="kids_sportswear.html">Kids Section</a> </li>
+      </ul>
+    </div>
+
+    <div class="link-wrapper">
+      <span class="inner-wrapper wrapper-17">
+        <a class="link hover-17" href="#footer_fname">
+          <span id="contact">Contact</span> <span id="us">Us!</span>
+        </a>
+      </span>
+    </div>
+
+  </div>
+  
+                                        <!-- Adults Sportswear -->
+<div class="adults_container">
+  <div class="adults_intro">
+    <h1><span id="ai_adults">Adults</span> Sports Wear</h1>
+    <h2>Choose Any Product You Like</h2> 
+  </div>
+
+  <form  id="form_adults" class="form_design" onsubmit="submit_form()">
+    <div class="products_selector">
+      <select id="selectbox" data-selected="" onchange="store_choice()" required>
+        <option value="" selected="selected" disabled="disabled">Select your product</option>
+        <option value="Nike Academy">
+          Nike Academy 16 Woven Tracksuit Set 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          Price: 40$</option>
+        <option value="Joma Supernova">
+          Joma Supernova Short Sleeve Shirt 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          Price: 30$</option>
+        <option value="Reece Core">
+          Reece Core Hockey Match Shirt Price: 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          Price: 20$</option>
+      </select>
+      
+      <div class="images" data-selected="">
+        <span class="loader">loading image...</span>
+        <span class="no-selection">no image selected</span>
+
+        <img src="../images/adults_sportswear/adults1.png" 
+        data-image="Nike Academy" 
+        alt="Nike Academy 16 Woven Tracksuit Set" 
+        title="Nike Academy 16 Woven Tracksuit Set" />
+
+        <img src="../images/adults_sportswear/adults2.png" 
+        data-image="Joma Supernova" 
+        alt="Joma Supernova Short Sleeve Shirt" 
+        title="Joma Supernova Short Sleeve Shirt" />
+
+        <img src="../images/adults_sportswear/adults3.png" 
+        data-image="Reece Core" 
+        alt="Reece Core Hockey Match Shirt" 
+        title="Reece Core Hockey Match Shirt" />
+      </div>
+
+      <div class="quantity">
+        <input type="number" name="Quantity" id="quantity" 
+        min="1" max="10" placeholder="Quantity" onchange="choice_quantity()" required>
+      </div>
+      
+      <div class="form_data">
+        <label for="form_full_name">Full Name: </label>
+        <input type="text" name="Full Name" id="form_full_name" onchange="name_form()" required>
+        <label for="form_email">Email: </label>
+        <input type="email" name="Email" id="form_email" onchange="email_form()" required>
+        <label for="form_address">Address:</label>
+        <input type="text" name="Address" id="form_address" onchange="address_form()" required>
+        <button type="submit" id="form_submit"> Order </button>
+      </div>
+    </div>
+  </form>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Confirmation</h2>
+      </div>
+      <div class="modal-body">
+        <p> Product name: <br> <span id="display_product"></span></p>
+        <p> Product quantity: <br> <span id="display_quantity"></span></p>
+        <p> Product price: <br> <span id="display_price"></span>$</p>
+        <p> Username: <br> <span id="display_name"></span></p>
+        <p> Email: <br> <span id="display_email"></span></p>
+        <p> Address: <br> <span id="display_address"></span></p>
+        <a href="../index.html" id="confirm_order">Confrim</a>
+      </div>
+      <div class="modal-footer">&nbsp;</div>
+    </div>
+  </div>
+
+</div>
+                      
+
+                                        <!-- Footer -->
+  <div class="footer">
+    <div class="footer_connect_with_us">
+      <h3>Connect with us:</h3>
+      <a href="https://www.facebook.com/">
+        <img class="facebook_icon" src="../images/footer/facebook.png" alt="facebook">
+      </a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/%22%3E">
+        <img class="insta_icon" src="../images/footer/instagram.png" alt="instagram">
+      </a>
+      &nbsp;
+      <a href="https://www.twitter.com/%22%3E">
+        <img class="twitter_icon" src="../images/footer/twitter.png" alt="twitter">
+      </a>
+      <br><br>
+      <img id="mail_image" src="../images/footer/mail.png" alt="mail">
+      <br>
+      <a class="footer_anchor" href="mailto:ashrafadel54@gmail.com">
+        &nbsp; questionSW@gmail.com
+      </a>
+      <br><br>
+      <img id="phone_image" src="../images/footer/phone.png" alt="phone">
+      <p id="phone_number"> &nbsp; +20 111 222 3333</p>
+    </div>
+    
+    <div class="contact_us">
+      <h3>Contact Us:</h3>
+      <div class="footer_form">
+        <form action="../index.html" method="GET" 
+        onsubmit="alert('Your message has been sent. We will contact you soon!')">
+        <p>Full Name: </p>
+        <input required type="Text" name="Fname" id="footer_fname" placeholder="full name">
+        <p>Email: </p>
+        <input required type="email" name="Mail" id="footer_email" placeholder="Email">
+        <p>Message: </p>
+        <textarea id="footer_msg" name="Message" cols="35" rows="2" placeholder="Message"></textarea>
+        <input type="submit" name="Register" id="footer_submit"  value="Send">
+        </form>
+      </div>
+    </div>
+
+    <div class="about_us">
+      <h3>About Us: </h3>
+      <p>Here at <span id="footer_site_name">SportsWear</span> we offer the finest clothes for sport activities!</p>
+      <p>You have both kids and adults sections with many different outfits for you to choose from!</p>
+      <p><span id="happy">Happy</span> <span id="shopping">shopping!</span></p>
+    </div>
+
+    <div class="footer_bottom">
+      &copy; 2020 SportsWear.com
+    </div>
+  </div>
+
+  <script src="../js/jquery-1.7.1.min.js"></script>
+  <script src="../js/js.js"></script> 
+</body>
+</html>
